@@ -2,6 +2,7 @@ import os
 import sys
 import zipfile
 import argparse
+import time
 
 
 class Evaluator:
@@ -67,11 +68,13 @@ class Evaluator:
                 inp = test["input"]
                 output = test["output"]
 
+                start = time.time()
                 obj.give_input(inp)
                 out = obj.solution().strip()
+                end = time.time()
 
                 if out == output:
-                    print(f"Test {index} : Passed")
+                    print(f"Test {index} : Passed  Time : {end-start}s")
                 else:
                     print(f"Test {index} : Failed")
                     # print(f"input: {inp}")
