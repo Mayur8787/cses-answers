@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 
 dotenv.load_dotenv(".env")
 
+
 class Generator:
     """
     To generate predefind templates
@@ -46,9 +47,7 @@ class Generator:
         if method == "get":
             response = self.session.get(url=url)
         else:
-            response = self.session.post(
-                url=url, headers=self.headers, data=data
-            )
+            response = self.session.post(url=url, headers=self.headers, data=data)
         return response
 
     def parse(self, response):
@@ -139,7 +138,7 @@ if __name__ == "__main__":
             return f"Error. {message}"
         filedata = self.get_tests()
         self.session.cookies.clear()
-        with open(f"{self.directory}/tests.zip","wb") as fp:
+        with open(f"{self.directory}/tests.zip", "wb") as fp:
             fp.write(filedata)
         return "Template and tests generated successfully."
 

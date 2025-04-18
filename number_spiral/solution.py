@@ -20,8 +20,10 @@ class Solution:
                     results.append((n * n) - (n - 1) - (n - x))
         return "\n".join(map(str, results))
 
+
 if __name__ == "__main__":
     import sys
+
     input = sys.stdin.read
     t = input()
     obj = Solution()

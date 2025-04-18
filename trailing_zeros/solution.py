@@ -9,7 +9,7 @@ class Solution:
         while self.n >= 5:
             self.n //= 5
             count += self.n
-        
+
         return str(count)
 
 

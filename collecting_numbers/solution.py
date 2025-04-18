@@ -12,7 +12,7 @@ class Solution:
             if number - 1 not in ref:
                 ref.add(number)
             else:
-                ref.remove(number-1)
+                ref.remove(number - 1)
                 ref.add(number)
         return str(len(ref))
 

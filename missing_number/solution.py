@@ -1,9 +1,9 @@
 class Solution:
 
     def give_input(self, input):
-        v1,v2 = input.strip().split("\n")
+        v1, v2 = input.strip().split("\n")
         self.number = int(v1)
-        self.lis = list(map(int,v2.split()))
+        self.lis = list(map(int, v2.split()))
 
     def solution(self):
         answer = (self.number * (self.number + 1)) // 2

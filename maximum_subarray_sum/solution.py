@@ -20,5 +20,5 @@ if __name__ == "__main__":
     length = input() + "\n"
     numbers = input()
     obj = Solution()
-    obj.give_input(length+numbers)
+    obj.give_input(length + numbers)
     print(obj.solution())

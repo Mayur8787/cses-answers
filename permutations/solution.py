@@ -8,11 +8,11 @@ class Solution:
             return "NO SOLUTION"
         if self.n == 4:
             return "2 4 1 3"
-        array = [0]*self.n
+        array = [0] * self.n
         odd_index = 0
-        even_index = self.n//2 if self.n%2 == 0 else self.n//2+1
+        even_index = self.n // 2 if self.n % 2 == 0 else self.n // 2 + 1
 
-        for number in range(1,self.n+1,2):
+        for number in range(1, self.n + 1, 2):
             array[odd_index] = str(number)
             if even_index < self.n:
                 array[even_index] = str(number + 1)
