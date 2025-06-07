@@ -82,7 +82,7 @@ class Evaluator:
                 else:
                     print(f"Test {index} : Failed")
                     print(f"input: {inp}")
-                    # print(f"expected output: {output}", f"actual output: {out}")
+                    print(f"expected output: {output}", f"actual output: {out}")
 
 
 if __name__ == "__main__":
