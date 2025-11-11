@@ -81,8 +81,8 @@ class Evaluator:
                     print(f"Test {index} : Passed  Time : {end-start}s")
                 else:
                     print(f"Test {index} : Failed")
-                    print(f"input: {inp}")
-                    print(f"expected output: {output}", f"actual output: {out}")
+                    # print(f"input: {inp}")
+                    print(f"expected output: {output}\n", f"actual output: {out}")
 
 
 if __name__ == "__main__":
